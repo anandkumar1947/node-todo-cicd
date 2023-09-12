@@ -2,11 +2,11 @@ pipeline {
     agent any
     
     stages{
-        stage("Code"){
+       /*stage("Code"){
             steps{
                 git url: "https://github.com/anandkumar1947/node-todo-cicd.git", branch: "master"
             }
-        }
+        } */ 
         stage("Build & Test"){
             steps{
                 sh "docker build . -t node-app-test-new"
